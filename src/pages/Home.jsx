@@ -12,7 +12,12 @@ export default function Home() {
   };
 
   return (
-    <div className=" relative min-h-screen bg-[url('./glassesImage/background.jpg')] bg-cover bg-center">
+    <div
+      className=" relative min-h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/glassesImage/background.jpg')",
+      }}
+    >
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative z-10">
         <Header />
